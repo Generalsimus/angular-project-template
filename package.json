@@ -2,13 +2,15 @@
   "name": "angular-task-for-croco",
   "homepage": "https://generalsimus.github.io/angular-project-template/",
   "version": "0.0.0",
+  "deployUrl": "/angular-project-template/",
+  "index": "docs/index.html",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href /angular-project-template/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "npm run build --deploy-url=/angular-project-template/",
+    "predeploy": "npm run build", 
     "deploy": "gh-pages -d docs"
   },
   "private": true,
