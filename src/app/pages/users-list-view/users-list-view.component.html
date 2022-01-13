@@ -1,0 +1,15 @@
+<div *ngFor="let user of users" class="flex w100 items-center  direction-column">
+    <a [routerLink]="['/users/',user.id]">
+        <div class="container flex w100 space-between border-box">
+            <div class="user-info flex direction-column">
+                <div>{{user.name}}<strong>@</strong><span class="user-username">{{user.username}}</span></div>
+                <span class="user-mail">{{user.email}}</span>
+                <h4><span class="icon-phone"></span>{{user.phone}}</h4>
+            </div>
+
+            <div class="user-location flex items-center content-center">
+                <div><span class="icon-location"></span>{{getUserAddress(user)}}</div>
+            </div>
+        </div>
+    </a>
+</div>

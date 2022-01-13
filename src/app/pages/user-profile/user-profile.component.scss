@@ -1,0 +1,97 @@
+$line-color: rgba(
+  $color: #000000,
+  $alpha: 0.27,
+);
+
+.container {
+  min-height: 100vh;
+  * {
+    transition: all ease-in-out 1s;
+  }
+}
+$user-cover-height: 350px;
+.user-cover {
+  border-bottom: 1px solid $line-color;
+  min-height: $user-cover-height;
+}
+.user-name {
+  margin: 0;
+  line-height: 1;
+  font-size: 5em;
+}
+.user-cover-info {
+  padding: 0 0 15px 60px;
+}
+.user-address {
+  width: 30%;
+  font-weight: 300;
+}
+.user-data {
+  background-color: $line-color;
+  gap: 1px;
+  > * {
+    width: 100%;
+    background-color: white;
+  }
+}
+.user-info {
+  line-height: 1.5em;
+}
+
+.posts-view {
+  strong {
+    text-decoration: underline;
+    line-height: 1.5em;
+    padding: 10px 10px 5px 0;
+  }
+}
+
+.post-title {
+  border: 1px solid $line-color;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-left: 0;
+  border-right: 0;
+}
+.post-content {
+  padding: 15px 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.company-title,
+.user-info-title {
+  font-size: 2rem !important;
+  font-weight: lighter;
+  padding: 5px 0;
+  line-height: normal !important;
+}
+.company-info {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.user-info {
+  span {
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+.show-all-posts {
+  .user-cover {
+    animation: postsFrame 0.5s;
+    @keyframes postsFrame {
+      from {
+        min-height: $user-cover-height;
+      }
+      to {
+        min-height: 0;
+      }
+    }
+    min-height: 0;
+  }
+  .user-cover-info {
+    align-items: center;
+  }
+}

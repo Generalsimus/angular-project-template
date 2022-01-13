@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap");
+@import "./assets/icons.scss";
+
+* {
+  font-family: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h4 {
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.content-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.content-end {
+  justify-content: end;
+}
+.direction-column {
+  flex-direction: column;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
