@@ -1,5 +1,5 @@
 
-[View Page](https://generalsimus.github.io/angular-project-template/)
+
 
 
 # AngularTaskForCroco 
